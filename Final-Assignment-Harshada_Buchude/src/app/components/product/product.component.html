@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-12">
+        <b>list product</b><i class="bi bi-info-circle justify-content-center" style="float: right;"></i>
+        <hr>
+<div class="card-group">
+    <div class="row" >
+     <div class="col-6" *ngFor="let item of productList | paginate: {itemsPerPage:4,currentPage:p};">  
+        <div class="card mb-3" style="max-width: 500px;" >
+            <div class="row no-gutters">
+            <div class="col-md-4">    
+          <img class="imageset" src="{{item.image}}" alt="image" height="110px">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <button type="button" class="btn btn-primary" routerLink="/productdetails">{{item.category}}</button>
+              <h5 class="card-title">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <h5 class="card-text">$ {{item.price}}<small class="text-muted"> $ 28.3</small></h5>
+              <img src="https://cdn-icons-png.flaticon.com/512/991/991985.png" alt="image" height="35px">
+            </div>
+          </div>
+        </div>  
+      </div>  
+    </div> 
+    </div>
+    <pagination-controls class="page" (pageChange)="p = $event"></pagination-controls>
+    </div>
+
+    
