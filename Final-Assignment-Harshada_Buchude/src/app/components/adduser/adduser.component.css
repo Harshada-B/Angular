@@ -1,0 +1,11 @@
+.form-control{
+    width: 38%;
+    height: 40px;
+    background-color: #d4e1ee; 
+    color: gray;
+    border-radius: 10px;
+}
+button{
+    height: 38px;
+    border-radius: 10px;
+}

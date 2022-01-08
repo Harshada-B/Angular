@@ -1,0 +1,45 @@
+/* #appContainer{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(251,194,235,1), rgba(179,202,243,1));
+}
+#cardStyle{
+    background-color: rgb(255,255,255,0.4);
+    box-shadow: 5px 3px 10px 5px gray;
+}
+.cantainer{
+    width:100%;
+}
+.sidenav{
+width:25%;
+}
+.main{
+    width:70%;
+} */
+.setmargin{
+    margin-left: 25px;
+    width: 800px;
+    border-radius: 20px;
+height: 500px;
+}
+.setwidth{
+    height: 500px;
+    margin-top: 60px;  
+}
+.set-navbar-margin
+{
+    border-radius: 20px;
+}
+body{
+    padding: 50px;
+    background-color: rgba(180, 211, 221);
+   height: 100%;
+    }
+    .icone{
+
+        margin-left: 80%;
+
+        margin-top: 20%;
+
+    }
+    

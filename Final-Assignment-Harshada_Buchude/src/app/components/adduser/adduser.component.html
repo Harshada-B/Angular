@@ -1,0 +1,19 @@
+<!-- <p>adduser works!</p> -->
+<form [formGroup]="register" (ngSubmit)="collection()">
+<div class="row">
+    <div class="col-md-12">
+        <b>Add a User</b><i class="bi bi-info-circle justify-content-center" style="float: right;"></i>
+        <hr>
+        <input class="form-control" type="text" placeholder="Username" formControlName="username"><br>
+        <input class="form-control" type="text" placeholder="Password" formControlName="password"><br>
+        <input class="form-control" type="text" placeholder="Email" formControlName="email"><br>
+        <input class="form-control" type="text" placeholder="City" formControlName="city"><br>
+        <input class="form-control" type="number" placeholder="Zipcode" formControlName="zipcode"><br>
+        <button type="submit" class="btn btn-primary">Add User</button>&nbsp;
+        <button type="button" class="btn btn-secondary">Reset</button>
+    </div>
+
+</div>
+</form>
+<router-outlet></router-outlet>
+

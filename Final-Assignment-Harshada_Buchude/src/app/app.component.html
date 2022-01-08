@@ -1,0 +1,57 @@
+<!-- <div class="cantainer">
+    <div class="sidenav">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+</div> -->
+<!-- <app-login></app-login> -->
+<!-- <router-outlet></router-outlet> -->
+<!-- <div *ngIf="route.url=='/'">
+    <app-login></app-login> 
+</div>
+<div *ngIf="route.url!='/'">
+    <div class="container mt-4 ">
+        <app-top-navbar></app-top-navbar>
+        <div class="row">
+          <div class="col-m-4 navSet ">
+            <app-side-navbar></app-side-navbar>
+          </div>
+          <div class="col-m-8 main set ">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+</div> -->
+<div *ngIf="route.url=='/'">
+    <app-login></app-login> 
+</div>
+<div *ngIf="route.url!='/'">
+<body>
+    <div>
+        
+        <div class="container">
+        
+          <app-header></app-header>
+            <div class="row setwidth">
+              
+              <div class="col-sm-3 border border-light set-navbar-margin " style="background-color:white">
+          
+                <app-sidenav></app-sidenav>
+          
+              </div>
+          
+              <div class="col-sm-8 border border-light setmargin" style="background-color:white">
+          
+                 <!-- <app-usermanager></app-usermanager> -->
+                 <router-outlet></router-outlet>
+              </div>
+          
+            </div>
+          
+          </div>
+        </div>
+      </body>
+    </div>
+    
