@@ -1,0 +1,15 @@
+input{
+    max-width: 40%;
+    margin-left: 30%;
+    border-radius: 12px;
+    color: gray;
+}
+.container{
+    background-color:#D3D3D3;
+    padding: 30px 10px 30px 10px;
+    max-width: 50%;
+}
+body{
+padding: 100px;
+background-color: rgb(180, 211, 221);
+}

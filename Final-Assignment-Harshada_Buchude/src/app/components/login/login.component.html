@@ -1,0 +1,41 @@
+<body>
+<div class="container text-center">
+    <button type="button" class="btn btn-primary" style="border-radius: 12px;"><b>Yms</b></button>
+    <!-- <form  [formGroup]="formGroup" (ngSubmit)="Login()"style="border-radius: 9px;"> -->
+      <form #userPost="ngForm" (ngSubmit)="Login(userPost.value)">
+        <br>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Username" name="email" ngModel>
+          <!-- <input type="email" 
+          class="form-control"
+          formControlName="email"
+          id="email" 
+           placeholder="Enter email" 
+           ngModel>  -->
+        </div>
+       
+        <br>
+        <div class="form-group">
+          <!-- <input type="password"
+           class="form-control"
+           formControlName="password"
+            id="exampleInputPassword1"
+             placeholder="Password"
+              ngModel> -->
+              <input class="form-control" type="password" placeholder="Password" name="password" ngModel>
+        </div>
+        
+       <br>
+       <!-- <button type="submit" class="btn btn-primary btn-sm" style="border-radius: 9px;" [disabled]="!formGroup.valid">Login
+      </button>&nbsp; -->
+      <button type="button" class="btn btn-primary mt-2" (click)="Login(userPost.value)">Login</button>&nbsp;
+
+   <button type="button" class="btn btn-secondary btn-sm disabled" style="border-radius: 9px;">Cancel</button><br><br>
+   OR
+  </form>
+  <br>
+  <button type="button" class="btn btn-outline-primary" style="border-radius: 9px; background-color: white;">Login with Facebook</button><br><br>
+  <button type="button" class="btn btn-outline-danger" style="border-radius: 9px; background-color: white;">Login  with  Google</button>  
+</div>
+</body>
+<!-- <router-outlet></router-outlet> -->
